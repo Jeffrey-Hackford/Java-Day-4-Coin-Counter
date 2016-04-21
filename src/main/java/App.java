@@ -51,7 +51,6 @@ public class App {
     pennies-=temp*5;
 
     returnValue+=" Pennies: "+pennies;
-
     return returnValue;
   }
 }

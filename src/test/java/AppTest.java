@@ -19,10 +19,30 @@ public class AppTest extends FluentTest {
   @ClassRule
   public static ServerRule server = new ServerRule();
 
+
+@Test
+  public void coinsCounter_returnsNumberOfQuarters_1() {
+    assertEquals("Quarters: 1 Dimes: 0 Nickles: 0 Pennies: 0", App.coinsCounter("25"));
+  }
+@Test
+  public void coinsCounter_returnsNumberOfDimes_2() {
+    assertEquals("Quarters: 0 Dimes: 2 Nickles: 0 Pennies: 0", App.coinsCounter("20"));
+  }
+@Test
+  public void coinsCounter_returnsNumberOfNickels_1() {
+    assertEquals("Quarters: 0 Dimes: 0 Nickles: 1 Pennies: 0", App.coinsCounter("5"));
+  }
+@Test
+  public void coinsCounter_returnsNumberOfPennies_4() {
+    assertEquals("Quarters: 0 Dimes: 0 Nickles: 0 Pennies: 4", App.coinsCounter("4"));
+  }
+
   @Test
   public void rootTest() {
     goTo("http://localhost:4567/");
-    assertThat(pageSource()).contains("ROCK PAPER SCISSORS");
+    fill("#sentence").with("44");
+    submit(".btn");
+    assertThat(pageSource()).contains("Quarters: 1 Dimes: 1 Nickles: 1 Pennies: 4");
   }
 
  //  @Test
