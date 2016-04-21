@@ -36,8 +36,13 @@ public class AppTest extends FluentTest {
   public void coinsCounter_returnsNumberOfPennies_4() {
     assertEquals("Quarters: 0 Dimes: 0 Nickles: 0 Pennies: 4", App.coinsCounter("4"));
   }
-
   @Test
+    public void coinsCounter_returnsChange_44() {
+      assertEquals("Quarters: 1 Dimes: 1 Nickles: 1 Pennies: 4", App.coinsCounter("44"));
+    }
+
+
+@Test
   public void rootTest() {
     goTo("http://localhost:4567/");
     fill("#sentence").with("44");

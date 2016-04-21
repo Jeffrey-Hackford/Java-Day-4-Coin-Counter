@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-04-21T20:21:47" hostname="Jacobs-MacBook-Pro.local" time="0.454">
+<testsuite name="AppTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-04-21T20:37:35" hostname="Jacobs-MacBook-Pro.local" time="0.348">
   <properties/>
   <testcase name="coinsCounter_returnsNumberOfNickels_1" classname="AppTest" time="0.003"/>
-  <testcase name="rootTest" classname="AppTest" time="0.431"/>
-  <testcase name="coinsCounter_returnsNumberOfQuarters_1" classname="AppTest" time="0.001"/>
-  <testcase name="coinsCounter_returnsNumberOfDimes_2" classname="AppTest" time="0.002"/>
+  <testcase name="coinsCounter_returnsChange_44" classname="AppTest" time="0.001"/>
+  <testcase name="rootTest" classname="AppTest" time="0.321"/>
+  <testcase name="coinsCounter_returnsNumberOfQuarters_1" classname="AppTest" time="0.002"/>
+  <testcase name="coinsCounter_returnsNumberOfDimes_2" classname="AppTest" time="0.0"/>
   <testcase name="coinsCounter_returnsNumberOfPennies_4" classname="AppTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Thread-4] INFO org.eclipse.jetty.util.log - Logging initialized @535ms
+  <system-err><![CDATA[[Thread-4] INFO org.eclipse.jetty.util.log - Logging initialized @542ms
 [Thread-4] INFO spark.webserver.JettySparkServer - == Spark has ignited ...
 [Thread-4] INFO spark.webserver.JettySparkServer - >> Listening on 0.0.0.0:4567
 [Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.3.2.v20150730
-[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@5b0f926b{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
-[Thread-4] INFO org.eclipse.jetty.server.Server - Started @590ms
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@43466fc1{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Thread-4] INFO org.eclipse.jetty.server.Server - Started @606ms
 [Test worker] INFO spark.webserver.JettySparkServer - >>> Spark shutting down ...
-[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@5b0f926b{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@43466fc1{HTTP/1.1,[http/1.1]}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.JettySparkServer - done
 ]]></system-err>
 </testsuite>
